@@ -17,6 +17,12 @@ Then add **hubot-watcher** to your `external-scripts.json`:
 ]
 ```
 
+## Run inside docker container
+```
+docker build -t hubot-watcher .
+docker run -d -e 'HUBOT_SLACK_TOKEN=my_token' hubot-watcher
+```
+
 ### Quickstart
 
 Add host to watcher list:
